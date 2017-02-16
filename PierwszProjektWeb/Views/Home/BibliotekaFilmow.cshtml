@@ -1,0 +1,43 @@
+﻿@model PierwszProjektWeb.Models.MojeZbiory
+
+@{
+    ViewBag.Title = "Filmy";
+}
+
+<h2>Jakies filmy</h2>
+
+<div>
+    <table class="table table-bordered">
+        <tr>
+            <th>Nazwa</th>
+            <th>Autor</th>
+            <th>Rok</th>
+        </tr>
+        @foreach (var item in Model.Filmy)
+        {
+            <tr>
+                <td>@item.Nazwa</td>
+                <td>@item.Autor</td>
+                <td>@item.Rok</td>
+            </tr>
+        }
+    </table>
+</div>
+
+<div>
+    <table class="table table-bordered">
+        <tr>
+            <th>Nazwa</th>
+            <th>Autor</th>
+            <th>Rok</th>
+        </tr>
+        @foreach (var item in Model.Ksiazki)
+        {
+            <tr>
+                <td>@item.Nazwa</td>
+                <td>@item.Autor</td>
+                <td>@item.Rok</td>
+            </tr>
+        }
+    </table>
+</div>
